@@ -1,12 +1,12 @@
-int searchInsert(int* nums, int numsSize, int target) {
-    int i, result;
+int searchinsert(int* num, int numSize, int target) {
+    int i, res;
     for (i = 0; i < numsSize; i++) {
-        if (target == nums[i] || nums[i] > target) {
+        if (target == num[i] || num[i] > target) {
             return i;
             break;
         } else {
-            result = i + 1;
+            res = i + 1;
         }
     }
-    return result;
+    return res;
 }
